@@ -1,0 +1,189 @@
+\documentclass[twoside]{article}
+\usepackage[accepted]{aistats2e}
+
+% If your paper is accepted, change the options for the package aistats2e as follows
+%\usepackage[accepted]{aistats2e}
+% This option will print headings for the title of your paper and headings for the
+% authors names, plus a copyright note at the end of the first column of the first page.
+
+
+\begin{document}
+
+% If your paper is accepted and the title of your paper is very long, the style will print
+% as headings an error message. Use the following command to supply a shorter title of your
+% paper so that it can be used as headings.
+%\runningtitle{I use this title instead because the last one was very long}
+
+% If your paper is accepted and the number of authors is large, the style will print
+% as headings an error message. Use the following command to supply a shorter version of the authors
+% names so that they can be used as headings (for example, use only the surnames)
+%\runningauthor{Surname 1, Surname 2, Surname 3, ...., Surname n}
+
+\twocolumn[
+
+\aistatstitle{Instructions for paper submissions to AISTATS 2010}
+
+\aistatsauthor{ Anonymous Author 1 \And Anonymous Author 2 \And Anonymous Author 3 }
+
+\aistatsaddress{ Unknown Institution 1 \And Unknown Institution 2 \And Unknown Institution 3 } ]
+
+\begin{abstract}
+The Abstract paragraph should be indented 0.25 inch (1.5 picas) on both left and right-hand margins. Use  10~point type, with a vertical
+spacing of 11~points.  {\bf Abstract} must be centered, bold, and in  point size 12. Two line spaces precede the Abstract. The Abstract
+must be limited to one paragraph.
+\end{abstract}
+
+\section{General formatting instructions}
+
+Papers are in 2 columns with the overall line width of 6.75~inches (41~picas). Each column is 3.25~inches wide (19.5~picas).  The space
+between the columns is .25~inches wide (1.5~picas).  The left margin is 1~inch (6~picas).  Use 10~point type with a vertical spacing of
+11~points. Times Roman is the preferred typeface throughout.
+
+Paper title is 16~point, caps/lc, bold, centered between 2~horizontal rules.  Top rule is 4~points thick and bottom rule is 1~point thick.
+Allow 1/4~inch space above and below title to rules.
+
+Authors' names are centered, initial caps.  The lead author's name is to be listed first (left-most), and the Co-authors' names (if
+different address) are set to follow.  If only one co-author, center both the author and co-author, side-by-side.
+
+One-half line space between paragraphs, with no indent.
+
+\section{First level headings}
+
+First level headings are all caps (optional), flush left, bold and in point size 12. One line space before the first level heading and 1/2~line space
+after the first level heading.
+
+\subsection{Second level heading}
+
+Second level headings must be flush left, all caps, bold and in point size 10. One line space before the second level heading and 1/2~line
+space after the second level heading.
+
+\subsubsection{Third Level Heading}
+
+Third level headings must be flush left, initial caps, bold, and in point size 10. One line space before the third level heading and
+1/2~line space after the third level heading.
+
+\vskip .5pc Fourth Level Heading
+
+Fourth level headings must be flush left, initial caps and Roman type.  One line space before the fourth level heading and 1/2~line space
+after the fourth level heading.
+
+\subsection{CITATIONS, FIGURES, REFERENCES}
+
+
+\subsubsection{Citations in Text}
+
+Citations within the text should include the author's last name and year, e.g., (Cheesman 1985). Reference style should follow the style
+that you are used to using, as long as the citation style is consistent.
+
+\subsubsection{Footnotes}
+
+Indicate footnotes with a number\footnote{Sample of the first footnote} in the text. Use 8 point type for footnotes. Place the footnotes at
+the bottom of the page  on which they appear. Precede the footnote with a 0.5 point horizontal rule  1~inch (6~picas) long.\footnote{Sample
+of the second footnote}
+
+\subsubsection{Figures}
+
+All artwork must be centered, neat, clean, and legible.  All lines should be very dark for purposes of reproduction and art work should not
+be hand-drawn.  Figure number and caption always appear below the figure.  Leave 2 line spaces between the figure and the caption. The
+figure caption is initial caps and each figure numbered consecutively.
+
+Make sure that the figure caption does not get separated from the figure. Leave extra white space at the bottom of the page rather than
+splitting the figure and figure caption.
+\begin{figure}[h]
+\vspace{1in} \caption{Sample Figure Caption}
+\end{figure}
+
+\subsubsection{Tables}
+
+All tables must be centered, neat, clean, and legible. Do not use hand-drawn tables. Table number and title always appear above the table.
+See Table~\ref{sample-table}.
+
+One line space before the table title, one line space after the table title, and one line space after the table. The table title must be
+initial caps and each table numbered consecutively.
+
+\begin{table}[h]
+\caption{Sample Table Title} \label{sample-table}
+\begin{center}
+\begin{tabular}{ll}
+\multicolumn{1}{c}{\bf PART}  &\multicolumn{1}{c}{\bf DESCRIPTION} \\
+\hline \\
+Dendrite         &Input terminal \\
+Axon             &Output terminal \\
+Soma             &Cell body (contains cell nucleus) \\
+\end{tabular}
+\end{center}
+\end{table}
+
+\newpage
+
+\section{Instructions for camera-ready papers}
+
+For the camera-ready paper, please make sure that you follow the next instructions
+
+\begin{enumerate}
+    \item Install the package \texttt{fancyhdr.sty}. The
+    \texttt{aistats2e.sty} file will make use of it.
+    \item Begin your document with
+    \begin{flushleft}
+    \texttt{\textbackslash documentclass[twoside]\{article\}}\\
+    \texttt{\textbackslash usepackage[accepted]\{aistats2e\}}
+    \end{flushleft}
+    The \texttt{twoside} option for the class article allows the
+    package \texttt{fancyhdr.sty} to include headings for even and
+    odd numbered pages. The option \texttt{accepted} for the package
+    \texttt{aistats.sty} will write a copyright notice at the end of
+    the first column of the first page. This option will also print headings for the paper.
+    For the \emph{even} pages, the title of the paper will be used as heading and for \emph{odd} pages
+    the author names will be used as heading.
+    If the title of the paper is too long or the number of authors is too large, the style will print a warning message as heading. If this happens
+    additional commands can be used to place as headings shorter versions of the title and the author names. This is explained in the next point.
+    \item
+    After $\texttt{\textbackslash
+    begin\{document\}}$, write
+    \begin{flushleft}
+    \texttt{\textbackslash begin\{document\}}\\
+    \texttt{\textbackslash runningtitle\{Provide here an alternative shorter version of the title of your
+    paper\}}\\
+    \texttt{\textbackslash runningauthor\{Provide here the surnames of the authors of your paper, all separated by
+    commas\}}
+    \end{flushleft}
+    The text that appears as argument in \texttt{\textbackslash runningtitle}
+    will be printed as a heading in the \emph{even} pages. The text that appears as argument in \texttt{\textbackslash runningauthor}
+    will be printed as a heading in the \emph{odd} pages.
+
+    If a warning message is printed, please provide shorter versions
+    of your paper's title and/or paper's authors, inside \texttt{\textbackslash runningtitle} and/or \texttt{\textbackslash
+    runningauthor}.
+
+    \item Use the sample2e.tex as an example.
+
+    \item The camera-ready paper is 8 pages. If you need to include
+      additional appendices, you can include them in the supplementary
+      material file.  
+   
+    \item Please, don't change the layout given by the style file. If you have any
+    question contact the publications chair.
+      
+
+\end{enumerate}
+
+\subsubsection*{Acknowledgements}
+
+Use unnumbered third level headings for the acknowledgements.  All acknowledgements go at the end of the paper.
+
+
+\subsubsection*{References}
+
+References follow the acknowledgements.  Use unnumbered third level heading for the references.  Any choice of citation style is acceptable
+as long as you are consistent. However, bear in mind that you must use the author-year style of citation (see examples above). Citation
+using numbers or any other type is not allowed. Additionally, the minimum fontsize for the references is $\texttt{\textbackslash small}$.
+Sizes smaller than this one are not allowed.
+
+J.~Alspector, B.~Gupta, and R.~B.~Allen  (1989). Performance of a stochastic learning microchip.  In D. S. Touretzky (ed.), {\it Advances
+in Neural Information Processing Systems 1}, 748-760.  San Mateo, Calif.: Morgan Kaufmann.
+
+F.~Rosenblatt (1962). {\it Principles of Neurodynamics.} Washington, D.C.: Spartan Books.
+
+G.~Tesauro (1989). Neurogammon wins computer Olympiad.  {\it Neural Computation} {\bf 1}(3):321-323.
+
+\end{document}

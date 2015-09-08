@@ -1,0 +1,77 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{times}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[ansinew]{inputenc}
+\usepackage{bm}
+\usepackage{float}
+\usepackage{url}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{graphics}
+\usepackage{subfigure}
+\usepackage[numbers]{natbib}
+\usepackage[small]{caption}
+\usepackage{url}
+
+
+
+\textwidth 7 in \oddsidemargin -0.2 in \setlength{\parindent}{0in}
+
+\title{Instructions to Prepare Camera-ready Papers}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+For the camera-ready paper, please make sure that you follow the
+next instructions
+
+\begin{enumerate}
+    \item Install the package \texttt{fancyhdr.sty}. The
+    \texttt{aistats.sty} file will make use of it.
+    \item Begin your document with
+    \begin{flushleft}
+    \texttt{\textbackslash documentclass[twoside]\{article\}}\\
+    \texttt{\textbackslash usepackage[accepted]\{aistats2e\}}
+    \end{flushleft}
+    The \texttt{twoside} option for the class article allows the
+    package \texttt{fancyhdr.sty} to include headings for even and
+    odd numbered pages. The option \texttt{accepted} for the package
+    \texttt{aistats.sty} will write a copyright notice at the end of
+    the first column of the first page.
+    \item After $\texttt{\textbackslash
+    begin\{document\}}$, write
+    \begin{flushleft}
+    \texttt{\textbackslash begin\{document\}}\\
+    \texttt{\textbackslash runningtitle\{Provide here the title of your
+    paper\}}\\
+    \texttt{\textbackslash runningauthor\{Provide here the surnames of the authors of your paper, all separated by
+    commas\}}\\
+    \texttt{\textbackslash checkheadings}
+    \end{flushleft}
+    The text that appears as argument in \texttt{\textbackslash runningtitle}
+    will be printed as a heading in the \emph{even} pages. The text that appears as argument in \texttt{\textbackslash runningauthor}
+    will be printed as a heading in the \emph{odd} pages.
+
+    If the title of your paper is too long, \texttt{\textbackslash
+    checkheadings} will print a warning message as heading title
+    instead. The same will happen if there are too many authors
+    appearing as argument in \texttt{\textbackslash
+    runningauthor}.\\
+
+    If a warning message is printed, please provide shorter versions
+    of your paper's title and/or paper's authors, inside \texttt{\textbackslash runningtitle} and/or \texttt{\textbackslash
+    runningauthor}.
+
+    \item Use the sample2e.tex as an example.
+
+    \item Please, don't change the layout given by the style file. If you have any
+    question contact the publications chair.
+
+
+\end{enumerate}
+
+
+\end{document}
