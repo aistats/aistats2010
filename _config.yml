@@ -8,18 +8,43 @@ baseurl: "/aistats2010" # the subpath of your site, e.g. /blog/
 url: "http://www.aistats.org" # the base hostname & protocol for your site
 #twitter_username: aistat
 github_username:  aistats
+author:
+  name: AISTATS
+comments: false
+plugins:
+- jekyll-remote-theme
+remote_theme: lawrennd/proceedings
+
+ghub:
+  edit: true
+  repository: aistats.github.io
+banner:
+  image: resort.jpg
 
 # Build settings
 markdown: kramdown
 
+conference:
+  draft: false # set to True if the programme is draft only.
+  logo: logo.jpg
+  hide_tentative: true
+  proceedings:
+    url: http://proceedings.mlr.press/v9/
+    show: true
+  room: Room
+  venue: Chia Laguna Resort
+  venue_url: http://www.chialagunaresort.com/EN/
+  location: Sardinia, Italy
+  full_name: Artificial Intelligence and Statistics
+  name: AISTATS
+  year: 2010
+  instance: 13th
+  styling: International Conference on
+  dates:
+  - 2010-05-13
+  - 2010-05-15
+
 # change encoding for the generated output files to utf-8
 encoding: utf-8
 
-# Handling Reading
-#safe:         false
-#include:      [".htaccess"]
-exclude:      []
-keep_files:   [".git", ".svn"]
-encoding:     "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
