@@ -3,41 +3,38 @@ title: Committees
 layout: default
 ---
 
-      <div class="contents">
+<h1>AISTATS*2010 Organizing Committees</h1>
 
-         <h1>AISTATS*2010 Organizing Committees</h1>
-<b>General Chair:</b> Neil Lawrence, &nbsp;<i>University of Manchester</i><br>
-<b>Program Chairs:</b> Yee Whye Teh, &nbsp;<i>University College London</i>, &nbsp;Mike Titterington, &nbsp;<i>University of Glasgow</i><br><br>
+{% if site.conference.chairs %}
+{% for chair in site.conference.chairs %}
+{% include listchairs.html %}
+{% endfor %}
+{% endif %}
 
-
-<b>Fundraising Chair:</b> Charles Sutton, &nbsp;<i>University of Edinburgh</i><br>
-<!--<b>Publicity Chair:</b> Alexander Ihler, &nbsp;<i>University of California, Irvine</i><br>-->
-<b>Publications Chair:</b> Mauricio Alvarez, &nbsp;<i>University of Manchester</i><br>
-
-<br>
 <b>Senior Program Committee</b>
 <ul>
-<li>Yasemin Altun,	&nbsp;<i>Max Planck Institute, T&uuml;bingen</i></li>
-<li>Francis Bach,      &nbsp;<i>INRIA - &Eacute;cole Normale Sup&eacute;rieure</i></li>
-<li>Arnaud Doucet,     &nbsp;<i>University of British Columbia</i></li>
-<li>Hal Daume III,     &nbsp;<i>University of Utah</i></li>
-<li>Mark Girolami,     &nbsp;<i>University of Glasgow</i></li>         
-<li>Jim Griffin,     &nbsp;<i>University of Kent</i></li>
-<li>Carlos Guestrin, &nbsp;<i>Carnegie Mellon University</i></li>
-<li>Dirk Husmeier,      &nbsp;<i>Biomathematics and Statistics Scotland</i></li> 
-<li>Bani Mallick,      &nbsp;<i>Texas A&M University</i></li> 
-<li>Iain Murray,       &nbsp;<i>University of Toronto/University of Edinburgh</i></li>
-<li>Brendan Murphy,      &nbsp;<i>University College Dublin</i></li> 
-<li>Kevin Murphy, &nbsp;<i>University of British Columbia</i></li>
-<li>Omiros Papaspiliopoulos,      &nbsp;<i>Universitat Pompeu Fabra</i></li>
-<li>Thomas Richardson,		  &nbsp;<i>University of Washington</i></li>
-<li>Matthias Seeger,   &nbsp;<i>Saarland University/Max Planck Institute for Informatics</i></li>
-<li>Nathan Srebro,     &nbsp;<i>Toyota Technological Institute at Chicago</i></li>
-<li>Erik Sudderth,     &nbsp;<i>Brown University</i></li>
-<li>John Winn,         &nbsp;<i>Microsoft Research</i></li>
-<li>Ming Yuan,      &nbsp;<i>Georgia Tech</i></li>                          
-<li>Hui Zou,      &nbsp;<i>University of Minnesota</i></li>                 
+  <li>Yasemin Altun,	&nbsp;<i>Max Planck Institute, T&uuml;bingen</i></li>
+  <li>Francis Bach,      &nbsp;<i>INRIA - &Eacute;cole Normale Sup&eacute;rieure</i></li>
+  <li>Arnaud Doucet,     &nbsp;<i>University of British Columbia</i></li>
+  <li>Hal Daume III,     &nbsp;<i>University of Utah</i></li>
+  <li>Mark Girolami,     &nbsp;<i>University of Glasgow</i></li>         
+  <li>Jim Griffin,     &nbsp;<i>University of Kent</i></li>
+  <li>Carlos Guestrin, &nbsp;<i>Carnegie Mellon University</i></li>
+  <li>Dirk Husmeier,      &nbsp;<i>Biomathematics and Statistics Scotland</i></li> 
+  <li>Bani Mallick,      &nbsp;<i>Texas A&M University</i></li> 
+  <li>Iain Murray,       &nbsp;<i>University of Toronto/University of Edinburgh</i></li>
+  <li>Brendan Murphy,      &nbsp;<i>University College Dublin</i></li> 
+  <li>Kevin Murphy, &nbsp;<i>University of British Columbia</i></li>
+  <li>Omiros Papaspiliopoulos,      &nbsp;<i>Universitat Pompeu Fabra</i></li>
+  <li>Thomas Richardson,		  &nbsp;<i>University of Washington</i></li>
+  <li>Matthias Seeger,   &nbsp;<i>Saarland University/Max Planck Institute for Informatics</i></li>
+  <li>Nathan Srebro,     &nbsp;<i>Toyota Technological Institute at Chicago</i></li>
+  <li>Erik Sudderth,     &nbsp;<i>Brown University</i></li>
+  <li>John Winn,         &nbsp;<i>Microsoft Research</i></li>
+  <li>Ming Yuan,      &nbsp;<i>Georgia Tech</i></li>                          
+  <li>Hui Zou,      &nbsp;<i>University of Minnesota</i></li>                 
 </ul>
+
 <!--<li>Jon McAuliffe,     &nbsp;<i>University of Pennsylvania</i>
 </li><li>Pascal Poupart,    &nbsp;<i>University of Waterloo</i>
 </li><li>Joris Mooij,       &nbsp;<i>Max Planck Institute, Tuebingen</i>
@@ -60,25 +57,24 @@ layout: default
 
 <b>Advisory Board for European Meetings</b>: 
 <ul>
-<li>Nicol&ograve; Cesa Bianchi,    &nbsp;<i>Universit&agrave; degli Studi di Milano</i></li>
-<li>Phil Dawid,             &nbsp;<i>University of Cambridge</i></li>
-<li>Zoubin Ghahramani,      &nbsp;<i>University of Cambridge</i></li>
-<li>David Hand,             &nbsp;<i>Imperial College, London</i></li>
-<li>Sami Kaski,             &nbsp;<i>Helsinki University of Technology</i></li>
-<li>Daryl Pregibon,         &nbsp;<i>Google Research, New York</i></li>
-<li>Bernhard Sch&ouml;lkopf,    &nbsp;<i>Max Planck Institute, T&uuml;bingen</i></li>
-<li>John Shawe-Taylor,      &nbsp;<i>University College London</i></li>
-<li>Max Welling,            &nbsp;<i>University of California, Irvine</i></li>
-<li>Chris Williams,          &nbsp;<i>University of Edinburgh</i></li>
+  <li>Nicol&ograve; Cesa Bianchi,    &nbsp;<i>Universit&agrave; degli Studi di Milano</i></li>
+  <li>Phil Dawid,             &nbsp;<i>University of Cambridge</i></li>
+  <li>Zoubin Ghahramani,      &nbsp;<i>University of Cambridge</i></li>
+  <li>David Hand,             &nbsp;<i>Imperial College, London</i></li>
+  <li>Sami Kaski,             &nbsp;<i>Helsinki University of Technology</i></li>
+  <li>Daryl Pregibon,         &nbsp;<i>Google Research, New York</i></li>
+  <li>Bernhard Sch&ouml;lkopf,    &nbsp;<i>Max Planck Institute, T&uuml;bingen</i></li>
+  <li>John Shawe-Taylor,      &nbsp;<i>University College London</i></li>
+  <li>Max Welling,            &nbsp;<i>University of California, Irvine</i></li>
+  <li>Chris Williams,          &nbsp;<i>University of Edinburgh</i></li>
 </ul>
 
 
-<br>
 
 <!--
-<br>
-<b>Program Committee: TBD</b>
-<br>
+    <br>
+    <b>Program Committee: TBD</b>
+    <br>
 -->
 
 <!--
@@ -173,5 +169,4 @@ layout: default
                </ul>
              </div>
 -->
-      </div>
 
