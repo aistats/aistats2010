@@ -12,6 +12,8 @@ author:
   name: AISTATS
 comments: false
 plugins:
+- jekyll-feed
+- jekyll-seo-tag
 - jekyll-remote-theme
 remote_theme: lawrennd/proceedings
 style: aistats
@@ -37,7 +39,8 @@ conference:
   venue_url: http://www.chialagunaresort.com/EN/
   location: Sardinia, Italy
   full_name: Artificial Intelligence and Statistics
-  name: AISTATS
+  short_name: AISTATS
+  name: Artificial Intelligence and Statistics
   year: 2010
   instance: 13th
   styling: International Conference on
@@ -51,7 +54,7 @@ conference:
       given: Neil D.
       institute: University of Manchester
       url: http://www.cs.man.ac.uk/%7Eneill/
-  - type: Program Chairs
+  - type: Programme Chairs
     people:
     - family: Teh
       given: Yee Whye

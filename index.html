@@ -1,25 +1,9 @@
 ---
 title: Home
-layout: default
-navigation_order: 1 
+layout: home
+weight: 1 
 ---
 
-<h1>Thirteenth International Conference on <br>Artificial Intelligence and Statistics</h1>
-<h3>May 13-15, 2010<br>
-  <a href="http://www.chialagunaresort.com/EN/">Chia Laguna Resort</a>, Sardinia, Italy<br></h3>
-
-<center><img src="{{ site.baseurl }}/images/main.jpg" alt=""></center>
-
-<p>This is the thirteenth conference conference on Artificial
-Intelligence and Statistics and the first to be held in
-Europe. Formerly AISTATS was held every two years. In the future the
-plan is to hold the meeting each year alternating between North
-America and Europe. AISTATS is an interdisciplinary gathering of
-researchers at the intersection of computer science, statistics, and
-related areas. Since its inception in 1985, the primary goal of this
-conference has been to broaden research in both of these fields by
-promoting the exchange of ideas between them. We encourage the
-submission of all papers which are in keeping with this objective.</p>
 	   
 
 <h2>Programme Booklet Available</h2>
@@ -32,18 +16,13 @@ submission of all papers which are in keeping with this objective.</p>
 
 <h2>Colocated Events</h2>
 
-<p>	   <b>Summer School</b>: Before AISTATS there will be an <a href="http://www.mlss.cc/sardinia10">MLSS Summer School on Machine Learning and Cognitive Science</a>.</p>
+<p><b>Summer School</b>: Before AISTATS there will be an <a href="http://www.mlss.cc/sardinia10">MLSS Summer School on Machine Learning and Cognitive Science</a>.</p>
   
 <p><b>Post Meeting Workshop</b>: After AISTATS there will be a <a href="http://clopinet.com/isabelle/Projects/AISTATS2010/">workshop on Active Learning and Experimental Design</a>.</p>
 
-<h2>General Chair</h2>
-<ul>
-  <li><a href="http://www.cs.man.ac.uk/%7Eneill/">Neil Lawrence</a>, University of Manchester, U.K.</li>
-</ul>
-
-<h2>Program Chairs</h2>
-<ul>
-  <li><a href="http://www.gatsby.ucl.ac.uk/%7Eywteh/">Yee Whye Teh</a>, University College London, U.K.</li>
-  <li><a href="http://www.stats.gla.ac.uk/%7Emike/">Mike Titterington</a>, University of Glasgow, U.K.</li>
-</ul>
+{% if site.conference.chairs %}
+{% for chair in site.conference.chairs %}
+{% include listchairs.html %}
+{% endfor %}
+{% endif %}
 
