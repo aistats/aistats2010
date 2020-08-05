@@ -34,7 +34,7 @@ conference:
   proceedings:
     url: http://proceedings.mlr.press/v9/
     show: true
-  room: Room
+  room: 
   venue: Chia Laguna Resort
   venue_url: http://www.chialagunaresort.com/EN/
   location: Sardinia, Italy
