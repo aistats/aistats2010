@@ -15,7 +15,7 @@ plugins:
 - jekyll-feed
 - jekyll-seo-tag
 - jekyll-remote-theme
-remote_theme: lawrennd/proceedings
+remote_theme: aistats/jekyll-theme
 style: aistats
 
 ghub:
@@ -26,54 +26,6 @@ banner: resort.jpg
 
 # Build settings
 markdown: kramdown
-
-conference:
-  draft: false # set to True if the programme is draft only.
-  image: main.jpg
-  hide_tentative: true
-  proceedings:
-    url: http://proceedings.mlr.press/v9/
-    show: true
-  room: 
-  venue: Chia Laguna Resort
-  venue_url: http://www.chialagunaresort.com/EN/
-  location: Sardinia, Italy
-  full_name: Artificial Intelligence and Statistics
-  short_name: AISTATS
-  name: Artificial Intelligence and Statistics
-  year: 2010
-  instance: 13th
-  styling: International Conference on
-  dates:
-  - 2010-05-13
-  - 2010-05-15
-  chairs:
-  - type: General Chair
-    people:
-    - family: Lawrence
-      given: Neil D.
-      institute: University of Manchester
-      url: http://www.cs.man.ac.uk/%7Eneill/
-  - type: Programme Chairs
-    people:
-    - family: Teh
-      given: Yee Whye
-      institute: University College London, U.K.
-      url: http://www.gatsby.ucl.ac.uk/%7Eywteh/
-    - family: Titterington
-      given: Mike
-      institute: University of Glasgow, U.K.
-      url: http://www.stats.gla.ac.uk/%7Emike/
-  - type: Fundraising Chair
-    people:
-    - family: Sutton
-      given: Charles
-      institute: University of Edinburgh
-  - type: Publications Chair
-    people:
-    - family: Alvarez
-      given: Mauricio
-      institute: University of Manchester
 
 # change encoding for the generated output files to utf-8
 encoding: utf-8
